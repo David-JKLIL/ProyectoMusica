@@ -1,33 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    height: 100vh;
-    width: 100%;
-    background-color: #121212;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.music-player-container{
-    background: linear-gradient(30deg, rgba(0,0,0,0.65), rgba(0,0,0,0.85));
+.music-player-container {
+    background: linear-gradient(30deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85));
     backdrop-filter: blur(10px);
     height: fit-content;
-    width: 35vw;
+    width: 100%;
     border-radius: 10px;
     padding: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.35);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.35);
 }
 
-.title-music-container{
+.title-music-container {
     width: 80%;
     height: 80%;
     width: fit-content;
@@ -36,20 +28,20 @@ body{
     margin-left: 10%;
 }
 
-.song-title{
+.song-title {
     font-weight: 600;
     font-size: 17px;
     letter-spacing: 0.5px;
 }
 
-.song-author{
+.song-author {
     margin-top: 0.1rem;
     font-size: 12px;
     color: rgb(167, 167, 167);
     letter-spacing: 0.1px;
 }
 
-.controls-music-container{
+.controls-music-container {
     width: 80%;
     height: fit-content;
     display: flex;
@@ -58,7 +50,7 @@ body{
     flex-direction: column;
 }
 
-.progress-song-container{
+.progress-song-container {
     margin-top: 0.6rem;
     width: 100%;
     display: flex;
@@ -67,7 +59,7 @@ body{
     flex-direction: column;
 }
 
-.progress-bar{
+.progress-bar {
     height: 3px;
     border-radius: 3px;
     width: 100%;
@@ -75,7 +67,7 @@ body{
     position: relative;
 }
 
-.progress{
+.progress {
     position: absolute;
     height: 100%;
     width: 0%;
@@ -83,7 +75,7 @@ body{
     background-color: white;
 }
 
-.time-container{
+.time-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -92,11 +84,11 @@ body{
     font-size: 12px;
 }
 
-.time-left{
+.time-left {
     margin-top: 0.3rem;
 }
 
-.main-song-controls{
+.main-song-controls {
     height: 30px;
     width: 100%;
     margin-top: 1rem;
@@ -105,17 +97,37 @@ body{
     align-items: center;
 }
 
-.icon{
+.icon {
     height: 100%;
     width: auto;
     opacity: 0.6;
     cursor: pointer;
 }
 
-.icon:hover{
+.icon:hover {
     opacity: 1;
 }
 
-audio{
+audio {
     display: none;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 100px;
+    background-color: #121212;
+}
+
+footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    color: white;
 }
